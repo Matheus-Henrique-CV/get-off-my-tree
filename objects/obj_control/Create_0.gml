@@ -11,23 +11,23 @@ layer_set_fx("fx_wind", wind_fx);
 tree_x = random_range(32, room_width-32);
 instance_create_layer(tree_x, -50, "Instances", obj_seed);
 tree_x = random_range(32, room_width-32);
-instance_create_layer(tree_x, -50, "Instances", obj_seed);
+instance_create_layer(tree_x, -60, "Instances", obj_seed);
 tree_x = random_range(32, room_width-32);
-instance_create_layer(tree_x, -50, "Instances", obj_seed);
+instance_create_layer(tree_x, -70, "Instances", obj_seed);
 tree_x = random_range(32, room_width-32);
-instance_create_layer(tree_x, -50, "Instances", obj_seed);
+instance_create_layer(tree_x, -80, "Instances", obj_seed);
 tree_x = random_range(32, room_width-32);
-instance_create_layer(tree_x, -50, "Instances", obj_seed);
+instance_create_layer(tree_x, -90, "Instances", obj_seed);
 
-delay_enemy = 60;
+delay_enemy = 70;
 timer_enemy = delay_enemy;
 
-delay_between_wave = 60 * 2;
+delay_between_wave = 60 * 3;
 timer_between_wave = delay_between_wave;
 active_wave = true;
 
 enemies_per_wave = 10;
-enemies_increase = 3;
+enemies_increase = 4;
 actual_enemies = 0;
 
 can_create_upgrades = false;
@@ -52,7 +52,7 @@ spaw_enemy = function()
 				instance_create_layer(_x, _y, "Instances", obj_enemy_1);
 				timer_enemy = delay_enemy;
 				actual_enemies++;
-				delay_enemy-=0.5;
+				delay_enemy-=0.2;
 			break
 			
 			case "left":
@@ -61,7 +61,7 @@ spaw_enemy = function()
 				instance_create_layer(_x, _y, "Instances", obj_enemy_1);
 				timer_enemy = delay_enemy;
 				actual_enemies++;
-				delay_enemy -= 0.5;
+				delay_enemy -= 0.2;
 			break
 			
 			case "right":
@@ -70,7 +70,7 @@ spaw_enemy = function()
 				instance_create_layer(_x, _y, "Instances", obj_enemy_1);
 				timer_enemy = delay_enemy;
 				actual_enemies++;
-				delay_enemy-=0.5;
+				delay_enemy-=0.2;
 			break
 		}
 	}
@@ -99,7 +99,7 @@ spaw_enemy = function()
 		if(timer_between_wave <= 0)
 		{
 			actual_enemies = 0;
-			enemies_per_wave *= 1.5;
+			enemies_per_wave += enemies_increase;
 			timer_between_wave = delay_between_wave;
 			active_wave = true;
 		}

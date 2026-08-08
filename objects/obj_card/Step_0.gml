@@ -66,7 +66,9 @@ if(position_meeting(mouse_x, mouse_y, self))
 		
 		if(image_index == 9) //Aumenta a vida máxima
 		{
+			instance_activate_object(obj_player);
 			global.max_life++;
+			obj_player.life = global.max_life;
 		}
 		
 		if(image_index == 10) //Folhas caem do céu

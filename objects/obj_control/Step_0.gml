@@ -1,5 +1,12 @@
 cursor_sprite = spr_mouse;
 
+global.points++;
+
+if(global.points > global.record)
+{
+	global.record = global.points;	
+}
+
 spaw_enemy();
 
 if(global.leaf_falling < 70)
@@ -13,7 +20,7 @@ if(global.leaf_falling < 70)
 	}
 }
 
-if(keyboard_check_pressed(ord("V"))) global.wind++
+//if(keyboard_check_pressed(ord("V"))) global.wind++
 
 if(global.wind == 0)
 {

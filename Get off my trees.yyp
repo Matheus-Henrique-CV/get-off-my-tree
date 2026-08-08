@@ -81,6 +81,7 @@
     {"id":{"name":"snd_soundtrack","path":"sounds/snd_soundtrack/snd_soundtrack.yy",},},
     {"id":{"name":"snd_squirrel","path":"sounds/snd_squirrel/snd_squirrel.yy",},},
     {"id":{"name":"snd_upgrade","path":"sounds/snd_upgrade/snd_upgrade.yy",},},
+    {"id":{"name":"spr_apple_icon","path":"sprites/spr_apple_icon/spr_apple_icon.yy",},},
     {"id":{"name":"spr_bee","path":"sprites/spr_bee/spr_bee.yy",},},
     {"id":{"name":"spr_beehive","path":"sprites/spr_beehive/spr_beehive.yy",},},
     {"id":{"name":"spr_bg_2","path":"sprites/spr_bg_2/spr_bg_2.yy",},},

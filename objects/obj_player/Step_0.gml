@@ -28,7 +28,26 @@ if(hungry <= 0)
 {
 	audio_stop_sound(snd_soundtrack);
 	
+	global.bee_chance = 0;
+	global.bolotas = 0;
+	global.move_speed = 1;
+	global.max_life = 0;
+	global.explosion_chance = 0;
+	global.ice_qtd = 0;
+	global.log_qtd = 0;
+	global.feathers_qtd = 0;
+	global.jump_height = 0;
+	global.max_hit = 0;
+	global.hit = 0;
+	global.leaf_falling = 70;
+	global.web_chance = 0;
+	global.leaf_qtd = 0;
+	global.feathers_qtd = 0;
+	global.wind = 0;
+	
 	global.game_over_txt = "O COSTELINHA FICOU COM FOME...";
+	
+	global.points = 0;
 		
 	room_goto(rm_game_over);
 }

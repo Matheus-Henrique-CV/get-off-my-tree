@@ -176,8 +176,11 @@ damage = function()
 		global.web_chance = 0;
 		global.leaf_qtd = 0;
 		global.feathers_qtd = 0;
+		global.wind = 0;
 		
 		global.game_over_txt = "AS VIDAS DO COSTELINHA ACABARAM...";
+		
+		global.points = 0;
 		
 		room_goto(rm_game_over);
 	}

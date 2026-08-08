@@ -19,4 +19,7 @@ global.leaf_qtd = 0;
 global.feathers_qtd = 0;
 global.wind = 0;
 
+global.points = 0;
+global.record = 0;
+
 global.game_over_txt = noone;

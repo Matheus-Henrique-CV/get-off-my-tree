@@ -1,6 +1,8 @@
 var _pitch = random_range(0.5, 1.5)
 audio_play_sound(snd_crow, 1, false, 1.1, 0, _pitch);
 
+global.points += 5;
+
 instance_create_layer(x, y, "Instances", obj_disapear_part);
 
 //Sistema de drop de sementes

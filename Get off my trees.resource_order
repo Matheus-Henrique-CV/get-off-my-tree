@@ -52,6 +52,7 @@
     {"name":"snd_shoot","order":2,"path":"sounds/snd_shoot/snd_shoot.yy",},
     {"name":"snd_squirrel","order":7,"path":"sounds/snd_squirrel/snd_squirrel.yy",},
     {"name":"snd_upgrade","order":3,"path":"sounds/snd_upgrade/snd_upgrade.yy",},
+    {"name":"spr_apple_icon","order":20,"path":"sprites/spr_apple_icon/spr_apple_icon.yy",},
     {"name":"spr_bee","order":7,"path":"sprites/spr_bee/spr_bee.yy",},
     {"name":"spr_beehive","order":8,"path":"sprites/spr_beehive/spr_beehive.yy",},
     {"name":"spr_bg_2","order":14,"path":"sprites/spr_bg_2/spr_bg_2.yy",},

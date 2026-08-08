@@ -1,0 +1,1 @@
+draw_text(820, 20, "Record: " + string(round(global.record / 60)));
