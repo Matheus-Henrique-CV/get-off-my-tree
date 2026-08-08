@@ -14,7 +14,7 @@ if(room == rm_menu)
 
 
 if(room == rm_game_over)
-{
+{	
 	draw_set_font(fnt_menu);
 	draw_set_halign(fa_center);
 	draw_text(room_width/2, 75, global.game_over_txt);
