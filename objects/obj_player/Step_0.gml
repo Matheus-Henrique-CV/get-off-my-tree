@@ -7,7 +7,7 @@ hungry -= 0.04;
 
 finaliza_hit_flash();
 
-if(keyboard_check_pressed(ord("R"))) game_restart();
+//if(keyboard_check_pressed(ord("R"))) game_restart();
 
 x = clamp(x, 8, room_width-8);
 

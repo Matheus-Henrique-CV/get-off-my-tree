@@ -36,4 +36,4 @@ else
 	image_yscale = 1.2;
 }
 
-if(keyboard_check_pressed(ord("B"))) global.bolotas++
+//if(keyboard_check_pressed(ord("B"))) global.bolotas++
