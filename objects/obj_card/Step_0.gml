@@ -7,6 +7,7 @@ if(position_meeting(mouse_x, mouse_y, self))
 	
 	if(mouse_check_button_released(mb_left))
 	{
+		audio_play_sound(snd_upgrade, 1, false);
 		
 		if(image_index == 0) //Inimigos spawnam abelhas
 		{
@@ -102,7 +103,7 @@ if(position_meeting(mouse_x, mouse_y, self))
 		
 		if(image_index == 16) //Vento
 		{
-			
+			global.wind++;
 		}
 		
 		if(image_index == 17) //Árvores soltam folhas

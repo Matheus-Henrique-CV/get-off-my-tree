@@ -12,6 +12,7 @@ if(keyboard_check_pressed(ord("R"))) game_restart();
 x = clamp(x, 8, room_width-8);
 
 var _gun = gun;
+
 if(_gun and instance_exists(obj_gun))
 {
 	var _dir = point_direction(x, y, mouse_x, mouse_y);
@@ -25,6 +26,8 @@ if(_gun and instance_exists(obj_gun))
 hungry = clamp(hungry, 0, 100);
 if(hungry <= 0)
 {
+	audio_stop_sound(snd_soundtrack);
+	
 	global.game_over_txt = "O COSTELINHA FICOU COM FOME...";
 		
 	room_goto(rm_game_over);

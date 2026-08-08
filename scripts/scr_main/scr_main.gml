@@ -2,7 +2,7 @@ global.different_cards = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
 global.choose_upgrades = false;
 
 //Upgrades
-global.bee_chance = 1;
+global.bee_chance = 0;
 global.bolotas = 0;
 global.move_speed = 1;
 global.max_life = 0;

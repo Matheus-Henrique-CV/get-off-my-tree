@@ -11,6 +11,8 @@ if(timer <= 0)
 	{
 		if(keyboard_check_pressed(ord("E")))
 		{
+			var _pitch = random_range(1, 1.5)
+			audio_play_sound(snd_crunch, 1, false, 1.1, 0, _pitch);
 			image_index = 0;
 			timer = delay;
 			ready = false;

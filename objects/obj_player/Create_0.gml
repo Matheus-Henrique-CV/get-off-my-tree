@@ -30,7 +30,8 @@ estado = noone;
 //Direção de onde estou olhando
 dir = 1;
 
-gun = instance_create_layer(x, y, layer, obj_gun);
+if(room == rm_gameplay) gun = instance_create_layer(x, y, layer, obj_gun);
+else gun = noone;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 troca_sprite = function(spr) //Serve pra iniciar uma animação a partir do primeiro frame
@@ -79,6 +80,8 @@ movimento = function()
 		
 		if(jump)
 		{
+			var _pitch = random_range(1, 1.5)
+			audio_play_sound(snd_jump, 1, false, 1.1, 0, _pitch);
 			velv -= max_velv+global.jump_height;
 		}
 	}
@@ -144,6 +147,9 @@ damage = function()
 {
 	if(invencible_timer <= 0)
 	{
+		var _pitch = random_range(0.5, 1.5)
+		audio_play_sound(snd_squirrel, 1, false, 1.1, 0, _pitch);
+		
 		screenshake(5)
 		aplica_hit_flash();
 		life--;
@@ -152,6 +158,8 @@ damage = function()
 	
 	if(life <= 0)
 	{
+		audio_stop_sound(snd_soundtrack);
+		
 		//Resetando os upgrades antes de reiniciar 
 		global.bee_chance = 0;
 		global.bolotas = 0;

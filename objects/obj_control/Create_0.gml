@@ -1,5 +1,7 @@
 randomize();
 
+audio_play_sound(snd_soundtrack, 1, true);
+
 wind_fx = fx_create("_effect_windblown_particles");
 fx_set_parameter(wind_fx, "param_num_particles", 0);	
 layer_set_fx("fx_wind", wind_fx);

@@ -14,3 +14,7 @@ else if(number == 4)
 {
 	text = "Jogar";	
 }
+else if(number == 5)
+{
+	text = "Tutorial";	
+}
