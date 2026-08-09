@@ -1,17 +1,18 @@
 {
   "FolderOrderSettings":[
     {"name":"Fonte","order":8,"path":"folders/Fonte.yy",},
-    {"name":"Sons","order":9,"path":"folders/Sons.yy",},
     {"name":"Objetos","order":2,"path":"folders/Objetos.yy",},
     {"name":"Partículas","order":3,"path":"folders/Partículas.yy",},
     {"name":"Scripts","order":7,"path":"folders/Scripts.yy",},
     {"name":"Shaders","order":1,"path":"folders/Scripts/Shaders.yy",},
+    {"name":"Sons","order":9,"path":"folders/Sons.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Árvores","order":4,"path":"folders/Sprites/Árvores.yy",},
     {"name":"Inimigos","order":3,"path":"folders/Sprites/Inimigos.yy",},
     {"name":"Tileset","order":5,"path":"folders/Tileset.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"fnt_menu_2","order":2,"path":"fonts/fnt_menu_2/fnt_menu_2.yy",},
     {"name":"fnt_menu","order":1,"path":"fonts/fnt_menu/fnt_menu.yy",},
     {"name":"obj_bee","order":13,"path":"objects/obj_bee/obj_bee.yy",},
     {"name":"obj_beehive","order":14,"path":"objects/obj_beehive/obj_beehive.yy",},

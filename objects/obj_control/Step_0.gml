@@ -46,7 +46,7 @@ else
 		}	
 	}
 
-	if(irandom(1500) < global.wind)
+	if(irandom(2000) < global.wind)
 	{
 		var _x = random_range(32, room_width-32);
 		instance_create_layer(_x, -50, "Instances", obj_seed);	
